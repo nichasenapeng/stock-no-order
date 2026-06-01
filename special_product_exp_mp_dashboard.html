@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Special Product EXP (MP) — 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  color-scheme:light;
+  --w:#fff;--g0:#f8f9fa;--g1:#f1f3f5;--g2:#e9ecef;--g3:#dee2e6;--g5:#868e96;--g7:#495057;--g9:#212529;
+  --bl:#1971c2;--bll:#d0ebff;--gn:#2f9e44;--gnl:#d3f9d8;--rd:#c92a2a;--rdl:#ffe3e3;--or:#e67700;--orl:#fff3bf;
+  --pu:#e67700;--pul:#fff3bf;
+}
+html{background:#e3f0fb}
+body{font-family:'Sarabun',sans-serif;color:var(--g9);font-size:14px;line-height:1.5;min-height:100vh;
+  background:linear-gradient(160deg,#f4fafe 0%,#e3f1fc 38%,#cfe6f8 70%,#bfdcf4 100%);background-attachment:fixed}
+/* content cards sit crisply on the gradient, with deeper layered shadows */
+.kc,.cc,.rg,.tw{background:rgba(255,255,255,.92);backdrop-filter:blur(3px);
+  box-shadow:0 4px 6px -1px rgba(23,78,135,.10),0 10px 24px -6px rgba(23,78,135,.18);
+  border-color:rgba(28,100,170,.12)}
+.kc{transition:box-shadow .2s,transform .2s}
+.kc:hover{box-shadow:0 8px 12px -2px rgba(23,78,135,.16),0 18px 36px -8px rgba(23,78,135,.26);transform:translateY(-2px)}
+/* header */
+.hd{background:var(--g9);color:#fff;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 2px 12px rgba(23,78,135,.22);position:relative;z-index:5}
+.hd h1{font-size:13px;font-weight:700;line-height:1.25}
+.hd p{font-size:10px;color:#adb5bd;margin-top:1px}
+.hd-r{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.wk{background:#fff;color:var(--g9);font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px}
+.upl{background:rgba(255,255,255,.08);border:1.5px dashed rgba(255,255,255,.3);border-radius:6px;padding:4px 11px;display:flex;align-items:center;gap:6px;cursor:pointer;transition:.2s}
+.upl:hover{background:rgba(255,255,255,.16)}
+.upl input{display:none}
+.upl span{font-size:10px;color:rgba(255,255,255,.85)}
+#ust{font-size:9px;color:#74c0fc;font-family:'IBM Plex Mono',monospace;max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* legend */
+.lg{background:var(--g0);border-bottom:1px solid var(--g2);padding:7px 28px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.li{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--g7)}
+.ld{width:9px;height:9px;border-radius:2px}
+/* layout */
+.wrap{max-width:1440px;margin:0 auto;padding:18px 28px}
+.sec{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--g5);margin-bottom:11px;padding-bottom:5px;border-bottom:1px solid var(--g2)}
+/* KPI */
+.kgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:24px}
+.kc{border:1px solid var(--g2);border-radius:8px;padding:13px 15px}
+.kc .lbl{font-size:10px;color:var(--g5);font-weight:600;margin-bottom:4px}
+.kc .val{font-size:22px;font-weight:700;font-family:'IBM Plex Mono',monospace;line-height:1}
+.kc .sub{font-size:9px;color:var(--g5);margin-top:3px}
+.cbl .val{color:var(--bl)}.cgn .val{color:var(--gn)}.cor .val{color:var(--or)}.crd .val{color:var(--rd)}
+/* table */
+.tw{border:1px solid var(--g2);border-radius:8px;overflow:hidden;margin-bottom:24px}
+table{width:100%;border-collapse:collapse}
+thead tr{background:var(--g9);color:#fff}
+thead th{padding:9px 12px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
+th.r,td.r{text-align:right}
+tbody tr{border-bottom:1px solid var(--g1)}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--g0)}
+td{padding:10px 12px;font-size:13px;vertical-align:middle}
+.rc{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--g5);background:var(--g1);padding:1px 6px;border-radius:3px;margin-right:6px}
+.rn{font-weight:700;font-size:14px}
+.pills{display:flex;gap:5px;margin-top:4px;flex-wrap:wrap}
+.p{font-size:11px;font-family:'IBM Plex Mono',monospace;padding:2px 7px;border-radius:9px;font-weight:600}
+.pbl{background:var(--bll);color:var(--bl)}.pgn{background:var(--gnl);color:var(--gn)}
+.prd{background:var(--rdl);color:var(--rd)}.pgr{background:var(--g1);color:var(--g5)}.por{background:var(--orl);color:var(--or)}
+.ppu{background:var(--pul);color:var(--pu)}
+.bm{font-size:10px;color:var(--g5);margin-top:3px}
+/* progress */
+.pw{display:flex;align-items:center;gap:6px}
+.pb{flex:1;height:5px;background:var(--g2);border-radius:99px;overflow:hidden;min-width:65px}
+.pf{height:100%;border-radius:99px}
+.pp{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;min-width:34px;text-align:right}
+/* sparkline */
+.sp{display:flex;align-items:flex-end;gap:2px;height:24px;min-width:100px}
+.sg{display:flex;align-items:flex-end;gap:1px;flex:1;height:100%}
+.sb{flex:1;border-radius:2px 2px 0 0}
+.spl{background:var(--g2)}.sa{background:var(--bl)}.sa.ov{background:var(--gn)}
+/* badge */
+.bd{display:inline-flex;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px}
+.bgn{background:var(--gnl);color:var(--gn)}.bbl{background:var(--bll);color:var(--bl)}
+.bor{background:var(--orl);color:var(--or)}.brd{background:var(--rdl);color:var(--rd)}.bgr{background:var(--g1);color:var(--g5)}
+/* charts */
+.cgd{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:24px}
+.cc{border:1px solid var(--g2);border-radius:8px;padding:13px}
+.cc h3{font-size:11px;font-weight:700;margin-bottom:2px}
+.cc .cm{font-size:9px;color:var(--g5);margin-bottom:6px}
+.mb{display:flex;align-items:flex-end;gap:2px;height:68px}
+.mg{flex:1;display:flex;align-items:flex-end;gap:1px;height:100%}
+.bw{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;flex:1;gap:0}
+.mr{width:100%;border-radius:2px 2px 0 0;min-height:1px}
+.mp{background:var(--g2)}.ma{background:var(--bl)}.ma.ov{background:var(--gn)}.mpr{background:var(--or);opacity:.85}
+.mlb{font-size:6.5px;font-family:'IBM Plex Mono',monospace;font-weight:700;line-height:1.2;text-align:center;white-space:nowrap;margin-bottom:1px}
+.xl{display:flex;gap:2px;margin-top:3px}
+.xl>div{flex:1;font-size:7px;color:var(--g5);text-align:center;font-family:'IBM Plex Mono',monospace}
+/* customer */
+.rg{margin-bottom:14px;border:1px solid var(--g2);border-radius:8px;overflow:hidden}
+.rh{background:var(--g0);padding:7px 13px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--g2);flex-wrap:wrap}
+.ct td{padding:6px 11px;border-bottom:1px solid var(--g1);font-size:11px}
+.ct th{background:var(--w);padding:5px 11px;font-size:9px;font-weight:700;color:var(--g5);text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--g1)}
+.nt{font-size:9px;background:var(--orl);color:var(--or);padding:1px 5px;border-radius:3px;display:inline-block;margin-top:2px}
+.ovx{overflow-x:auto}
+/* tabs */
+.tabs{display:flex;gap:3px;margin-bottom:16px;background:var(--g1);padding:3px;border-radius:7px;width:fit-content}
+.tb{padding:5px 15px;font-size:11px;font-weight:600;font-family:'Sarabun',sans-serif;border:none;background:transparent;border-radius:5px;cursor:pointer;color:var(--g7);transition:.15s}
+.tb.on{background:var(--w);color:var(--g9);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.pn{display:none}.pn.on{display:block}
+footer{border-top:1px solid var(--g2);padding:10px 28px;display:flex;justify-content:space-between;background:var(--g0);font-size:10px;color:var(--g5)}
+@media(max-width:860px){.kgrid{grid-template-columns:repeat(2,1fr)}.cgd{grid-template-columns:1fr}.wrap{padding:12px}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <div>
+    <h1>📦 Special Product EXP (MP) — 2026 Sales Summary</h1>
+    <p>Export plan vs. actual for special chicken parts &nbsp;|&nbsp; Unit: Metric Ton (MT)</p>
+  </div>
+  <div class="hd-r">
+    <button class="upl" id="rf" type="button" style="border-style:solid">
+      <span>🔄 Refresh จาก Sheet</span>
+    </button>
+    <span id="ust">Live: Google Sheet</span>
+    <span class="wk">WEEK 20 / 2026</span>
+  </div>
+</div>
+
+<div class="lg">
+  <b style="font-size:10px;color:var(--g7)">Legend:</b>
+  <div class="li"><div class="ld" style="background:var(--g3)"></div>Plan (Target)</div>
+  <div class="li"><div class="ld" style="background:var(--bl)"></div>Actual (Achieved)</div>
+  <div class="li"><div class="ld" style="background:var(--gn)"></div>Over Plan</div>
+  <div class="li"><div class="ld" style="background:var(--or);opacity:.85"></div>Prospect (Pipeline)</div>
+  <span style="margin-left:auto;font-size:10px;color:var(--g5)">Unit: MT (Metric Ton)</span>
+</div>
+
+<div class="wrap">
+  <div class="tabs">
+    <button class="tb on" onclick="tab('ov',this)">🏠 Overview</button>
+    <button class="tb" onclick="tab('mo',this)">📅 Monthly</button>
+    <button class="tb" onclick="tab('cu',this)">🏢 By Customer</button>
+  </div>
+
+  <div class="pn on" id="pn-ov">
+    <div class="sec">Full Year 2026 — Summary</div>
+    <div class="kgrid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="kc cbl"><div class="lbl">🎯 Total Plan (Target)</div><div class="val" id="kp">—</div><div class="sub">MT across 22 product types</div></div>
+      <div class="kc cgn"><div class="lbl">✅ Total Actual Sales</div><div class="val" id="ka">—</div><div class="sub">MT achieved so far</div></div>
+      <div class="kc cor"><div class="lbl">📊 Achievement Rate</div><div class="val" id="kpct">—</div><div class="sub">of full-year plan (WEEK 14)</div></div>
+      <div class="kc crd"><div class="lbl">⚠️ Remaining Gap</div><div class="val" id="kg">—</div><div class="sub">MT still needed</div></div>
+      <div class="kc" style="border-color:var(--pul)"><div class="lbl">🔮 Total Prospect</div><div class="val" id="kpr" style="color:var(--pu)">—</div><div class="sub">MT pipeline (potential orders)</div></div>
+    </div>
+    <div class="sec">Sales by Product Type — 2026</div>
+    <div class="tw"><table>
+      <thead><tr>
+        <th style="width:280px">Product Type</th>
+        <th class="r" style="width:95px">Target (MT)</th>
+        <th class="r" style="width:95px">Actual (MT)</th>
+        <th class="r" style="width:95px">Prospect (MT)</th>
+        <th style="width:195px">Progress</th>
+        <th>Status</th>
+      </tr></thead>
+      <tbody id="tb"></tbody>
+    </table></div>
+  </div>
+
+  <div class="pn" id="pn-mo">
+    <div class="sec">Monthly Breakdown — Plan vs Actual (2026)</div>
+    <div class="cgd" id="cg"></div>
+  </div>
+
+  <div class="pn" id="pn-cu">
+    <div class="sec">Customer & Product Detail — Monthly Actual Sales</div>
+    <div id="cd"></div>
+  </div>
+</div>
+
+<footer>
+  <span>Special Product EXP (MP) — 2026 | WEEK 20</span>
+  <span>Live source: Google Sheet — Special Product EXP (MP) (Sheet 2)</span>
+</footer>
+
+<script>
+// ── DATA — sourced from จัดสรรเนื้อ 2026 - Special Product EXP (MP).csv (WEEK 20) ──
+// Keys match HTML display names | p=All PLAN, a=All ACTUAL (Jan–Dec 2026)
+const D={
+"01 NECK SKIN":{p:[4.56,7.44,14.88,16.56,16.56,16.56,20.4,20.4,22.08,22.08,24,24],a:[1.01,2.5,11.17,7.26,4.3,0,0,0,0,0,0,0]},
+"02 TAIL":{p:[2.28,3.72,7.44,8.28,8.28,8.28,10.2,10.2,11.04,11.04,12,12],a:[0,0.96,6.12,7.35,7.55,0,0,0,0,0,0,0]},
+"03 SKIN BB":{p:[12.35,20.15,40.3,44.85,44.85,44.85,55.25,55.25,59.8,59.8,65,65],a:[50.55,66.48,103.9,103.56,69.82,89.52,18.14,24,0,38.04,0,0]},
+"04 SHOULDER & RIBS":{p:[9.12,14.88,29.76,33.12,33.12,33.12,40.8,40.8,44.16,44.16,48,48],a:[24,24,66,48,0,24,24,0,1.2,0,0,0]},
+"05 SBB TRIMMING (CENTER TENDON)":{p:[2.28,3.72,7.44,8.28,8.28,8.28,10.2,10.2,11.04,11.04,12,12],a:[0,0,1,0,0.2,0,0,0,0,0,0,0]},
+"06 SBB TRIMMING":{p:[10.37,16.93,33.85,37.67,37.67,37.67,46.41,46.41,50.23,50.23,54.6,54.6],a:[27.3,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,0]},
+"07 FILLET TRIMMING":{p:[4.56,7.44,14.88,16.56,16.56,16.56,20.4,20.4,22.08,22.08,24,24],a:[30,30,30,24,0,0,0,0,0,0,0,0]},
+"08 BL SCRAP":{p:[13.68,22.32,44.64,49.68,49.68,49.68,61.2,61.2,66.24,66.24,72,72],a:[24,86.5,24,31.78,26.26,52.15,48,24,24,24,24,24]},
+"09 BL OYSTER":{p:[5.13,8.37,16.74,18.63,18.63,18.63,22.95,22.95,24.84,24.84,27,27],a:[21.99,27,27,27,13.5,0,0,0,0,0,0,0]},
+"10 PREMIUM CCM":{p:[95,155,310,345,345,345,425,425,460,460,500,500],a:[751.9,350.9,134.96,134.96,13.5,0,0,0,0,0,0,0]},
+"12 MDM":{p:[22.8,37.2,74.4,82.8,82.8,82.8,102,102,110.4,110.4,120,120],a:[134.96,134.96,134.96,0,0,0,0,0,0,0,0,0]},
+"13 BACK RIB":{p:[0,0,0,0,5,16,6,6,6,6,6,6],a:[0,0,12,0,0,0,0,0,2.4,0,0,0]},
+"14 NECK MEAT":{p:[9.12,14.88,29.76,33.12,33.12,33.12,40.8,40.8,44.16,44.16,48,48],a:[24,26.76,21.15,46.2,13.8,8.74,0,32.74,8.74,8.74,8.74,8.74]},
+"15 MEMBRANE":{p:[9.12,14.88,29.76,33.12,33.12,33.12,40.8,40.8,44.16,44.16,48,48],a:[0,42,74.4,48,24,48,0,0,0,0,0,0]},
+"16 GIZZARD":{p:[12,24,48,48,48,48,48,48,48,48,48,48],a:[8.05,30.21,11.07,5.26,45.86,12,2.38,11.38,0,0,11.38,0]},
+"17 KNEE TENDON":{p:[12,24,48,48,48,48,48,48,48,48,48,48],a:[0,0,0,0,0,0,0,0,0,0,0,0]},
+"18 LEG TENDON":{p:[12,24,48,48,48,48,48,48,48,48,48,48],a:[0,0,0,0,0,0,0,0,0,0,0,0]},
+"19 PAWS":{p:[12,24,48,48,48,48,48,48,48,48,48,48],a:[7.8,0,0,0,23.4,0,0,0,0,0,0,0]},
+"20 WING STICK":{p:[12.75,25.5,51,51,51,51,51,51,51,51,51,51],a:[0,0,0,27,0,0,0,0,0,0,0,0]},
+"21 2JW & 3JW":{p:[10.5,21,42,42,42,42,42,42,42,42,42,42],a:[0,0,0,27.94,3,0,0,0,0,0,0,0]},
+"22 WHOLE CHICKEN":{p:[5,10,20,20,20,20,20,20,20,20,20,20],a:[0,0,0,0,0,0,0,0,0,0,0,0]},
+"23 CHICKEN FAT":{p:[12,12,12,12,12,12,12,12,12,12,12,12],a:[51,0,0,0,24,0,24,0,0,0,0,0]}
+};
+
+// ── PROSPECT — All PROSPECT rows in _2.csv are 0; keeping previous week's pipeline data
+const PR={
+"01 NECK SKIN":[0,0,0,0,14,0,14,0,14,14,0,14],
+"03 SKIN BB":[0,8.9,17.8,32.3,17.8,8.9,80.2,71.3,80.2,71.3,80.2,71.3],
+"04 SHOULDER & RIBS":[0,0,0,0,12,0,0,24,24,24,24,24],
+"05 SBB TRIMMING (CENTER TENDON)":[0,0,0,0,27,0,0,0,0,0,0,0],
+"06 SBB TRIMMING":[0,0,0,0,0,0,0,0,0,0,0,54.6],
+"07 FILLET TRIMMING":[24,24,0,0,0,0,0,0,0,0,0,0],
+"08 BL SCRAP":[27,27,27,51,51,51,75,51,51,51,51,51],
+"09 BL OYSTER":[0,0,0,0,93,54,78,54,54,54,54,54],
+"10 PREMIUM CCM":[0,0,0,0,399,399,399,399,399,399,399,399],
+"12 MDM":[0,0,0,135,399,399,399,399,399,399,399,399],
+"13 BACK RIB":[0,0,0,3,42,6,0,0,0,0,0,0],
+"14 NECK MEAT":[0,0,0,0.96,3.48,24.96,24.48,35.76,24.48,48.96,26.28,48.96],
+"15 MEMBRANE":[0,0,0,0,0,12,24,24,0,24,12,24],
+"16 GIZZARD":[0,0,31.8,0,0,0,0,0,0,0,0,0],
+"17 KNEE TENDON":[0,0,0,0,0,3,0,0,0,0,0,0],
+"18 LEG TENDON":[0,0,0,0,0,3,0,0,0,0,0,0],
+"19 PAWS":[0,7.8,12.2,7.8,7.8,7.8,7.8,7.8,7.8,7.8,7.8,7.8],
+"20 WING STICK":[0,27,27,27,54,27,0,0,0,0,0,0],
+"21 2JW & 3JW":[0,0,43,48,48,24,0,0,0,0,0,0],
+"22 WHOLE CHICKEN":[0,0,0,0,0,0,0,0.38,0,0,0,0],
+"23 CHICKEN FAT":[0,0,0,0,0,0,72,72,72,72,72,72]
+};
+const C=[
+["01 NECK SKIN","BRAND SHOKUHAN","111353202","HERB YTR BOILED NECK SKIN 40G S18","Closed: long contract MAR-MAY",[1.008,2.5032,11.172,7.2576,4.3008,0,0,0,0,0,0,0]],
+["01 NECK SKIN","TTS (OOGURA)","111353203","HERB YTR NECK SKIN 30G R15","",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["01 NECK SKIN","MAYEKAWA","—","HERB FED YTR NECK SKIN","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["01 NECK SKIN","OKAYA (ASAHI)","—","HERB FED YTR NECK SKIN 40G R15","Long contract — not closed",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["01 NECK SKIN","OKAYA (KS FRONTIER)","NPD","HERB YTR NECK SKIN 40G R18","NPD — SR By AIR ETD 13/01/2026",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","BRAND SHOKUHAN","111358203","HERB YTR TAIL 40G S18","Closed: long contract MAR-MAY",[0,0,4.212,7.3548,7.3548,0,0,0,0,0,0,0]],
+["02 TAIL","UMIOS","111358303","HERB YTR TAIL 25G R15 IVQF","Closed 17/12/2025",[0,0.96,0.904,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","UMIOS","—","HERB YTR MIXED PARTS 25G (BL, BB SKIN, TAIL, SBB)","Closed 07/01/2026",[0,0,1.004,0,0.2,0,0,0,0,0,0,0]],
+["02 TAIL","OKAYA","—","YTR TAIL","",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","OKAYA (KS FRONTIER)","NPD","HERB CHICKEN TAIL KARAAGE IVQF 1KGx10","NPD — Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","PUCHONG","—","FROZEN CHICKEN TAIL","Offer 31/3 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (NISHIFU)","111521009","FRIED HERB CHICKEN SKIN KARAAGE","Follow up after Golden Week",[23.4,46.8,70.2,46.8,46.8,46.8,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (ASAHI)","111127209","HERB FED SKIN BB","Closed — Long contract",[24,0,0,24,0,24,0,24,0,24,0,0]],
+["03 SKIN BB","HARUMI","111127202","FROZEN CHICKEN SKIN","",[0,18.72,28.08,18.72,18.72,18.72,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (KANEMATSU FOODS)","111327205","HERB YTR BOILED BB SKIN 35G TW18","Closed: Mar, May, Jul",[3.15,0,4.095,0,4.095,0,4.095,0,0,0,0,0]],
+["03 SKIN BB","UMIOS","111327303","HERB YTR BOILED BB SKIN 25G R15 IVQF","Closed 17/12/2025",[0,0.96,0.52,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (ASAHI)","111327201","YTR 35G BOILED BB SKIN F15","Closed — Long contract",[0,0,0,14.04,0,0,14.04,0,0,14.04,0,0]],
+["04 SHOULDER & RIBS","UMIOS","111129224","FROZEN CHICKEN BONELESS BREAST-K","Closed: Jun/Jul, Jul/Aug",[24,24,48,48,0,24,24,0,0,0,0,0]],
+["04 SHOULDER & RIBS","UMIOS","111129234","HERB SHOULDER MEAT 15G UP","Not closed",[0,0,12,0,0,0,0,0,0,0,0,0]],
+["04 SHOULDER & RIBS","OKAYA","111129222","HERB SHOULDER MEAT 10G UP","",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["05 SBB TRIMMING (CENTER TENDON)","UMIOS","111329202","HERB YTR MIXED PART 25G (SBB CENTER TENDON)","Inquiry 2.4-4MT JUN/JUL",[0,0,1.004,0,0.2,0,0,0,0,0,0,0]],
+["05 SBB TRIMMING (CENTER TENDON)","ITOCHU","111129229","HERB BB TRIMMING","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["05 SBB TRIMMING (CENTER TENDON)","BUMIMAS","111129228","FROZEN CHICKEN SBB TRIMMING","Offer MAY/JUN — not closed",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["06 SBB TRIMMING","LAMEX","111129231","FROZEN CHICKEN SKINLESS BONELESS BREAST TRIMMING (JUMBO)","Customer rejected new spec",[27.3,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,0]],
+["06 SBB TRIMMING","SINIORA","—","FROZEN CHICKEN SKINLESS BONELESS BREAST TRIMMING (JUMBO)","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","ATAGO","111149201","FROZEN CHICKEN INNER FILLET TRIMMING (CAN ACCEPT TENDON)","Closed: Jan-Apr",[24,24,24,24,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","ATAGO","111149205","FROZEN CHICKEN INNER FILLET TRIMMING (WITHOUT TENDON)","",[6,6,6,0,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","MIKAGE","—","FROZEN CHICKEN INNER FILLET TRIMMING","Customer on hold",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["08 BL SCRAP","ITOCHU","111119215","HERB FED BL TRIMMING","",[24,48,0,0,0,0,0,0,0,0,0,0]],
+["08 BL SCRAP","ITOCHU","111119230","HERB BL TRIMMING (TYPE A)","Offer Jan/Feb",[0,0,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2]],
+["08 BL SCRAP","ITOCHU","111119231","HERB BL TRIMMING (TYPE B)","",[0,0,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8]],
+["08 BL SCRAP","OKAYA","111119215","HERB FED BL TRIMMING","Inquiry Jun 1 FCL",[0,38.5,0,7.78,2.26,28.15,0,0,0,0,0,0]],
+["09 BL OYSTER","BUMIMAS","111119222","FROZEN CHICKEN SKINLESS BONELESS LEG-K","Closed: Apr/May 1 FCL",[21.99,27,27,27,0,0,0,0,0,0,0,0]],
+["09 BL OYSTER","BUMIMAS","111119226","FROZEN CHICKEN SKINLESS BONELESS LEG-K","Closed: combine MDM",[0,0,0,0,13.5,0,0,0,0,0,0,0]],
+["09 BL OYSTER","JAPAN FOOD (NH FOOD)","111319209","HERB FED YTR OYSTER MEAT 30G R15","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","KK FRESH","111150220","FROZEN CHICKEN MECHANICALLY DEBONED MEAT (ST.1)","",[242.93,242.93,134.96,134.96,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","KK FRESH","111150212","FROZEN CHICKEN MECHANICALLY DEBONED MEAT (ST.1)","",[107.97,107.97,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","HUME","111150227","FROZEN CHICKEN MECHANICALLY DEBONED MEAT (ST.1+AW PKG)","",[396,0,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","BUMIMAS","111150220","FROZEN CHICKEN MECHANICALLY DEBONED MEAT","Closed: combine oyster",[5.01,0,0,0,13.5,0,0,0,0,0,0,0]],
+["12 MDM","KK FRESH","111150221","FROZEN CHICKEN MECHANICALLY DEBONED MEAT","Closed 18/12 (15 FCL)",[134.96,134.96,134.96,0,0,0,0,0,0,0,0,0]],
+["12 MDM","HUME","111150221","FROZEN CHICKEN MECHANICALLY DEBONED MEAT (MIX STAGE)","",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["13 BACK RIB","UMIOS","111159210","HERB FED CHICKEN RIBS 20G UP","Inquiry 24MT prompt shipment",[0,0,12,0,0,0,0,0,0,0,0,0]],
+["13 BACK RIB","CGC","—","RIBS","Closed: Early Sep",[0,0,0,0,0,0,0,0,2.4,0,0,0]],
+["13 BACK RIB","OKAYA (ASAHI)","111159208","HERB FED CHICKEN RIBS 25-35G 1KGx12","Inquiry 18MT",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","OKAYA (ASAHI)","111154208","HERB FED NECK MEAT 2KGx6","Closed: 12MT, Inquiry Oct 12MT",[0,12,0,24,0,0,0,12,0,0,0,0]],
+["14 NECK MEAT","OKAYA (ASAHI)","111154210","HERB FED NECK MEAT 500Gx24","Closed: 12MT",[0,12,0,0,0,0,0,12,0,0,0,0]],
+["14 NECK MEAT","J OVERSEA","—","HERB FED CHICKEN NECK MEAT 240Gx40 BAG","Closed: 4 FCL",[0,0,0,0,0,8.74,0,8.74,8.74,8.74,8.74,8.74]],
+["14 NECK MEAT","ATAGO","—","HERB FED NECK MEAT","",[12,0,0,0,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","UMIOS","—","HERB YTR NECK MEAT 25G R15 IVQF","Closed 17/12/2025",[0,0.96,0.75,0,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","HANWA","111154202","NECK MEAT HERB (1KG)","Offer valid — not closed",[0,0,8.4,15,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","MIKAGE","—","NECK MEAT HERB","Inquiry — combine pending",[0,0,12,0,12,0,0,0,0,0,0,0]],
+["14 NECK MEAT","IMAZU","—","HERB FED NECK MEAT","",[12,0,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","ITOCHU","111156213","HERB FED CHICKEN MEMBRANE (HALF-CUT — Starzen & Marudai)","Closed: Apr-Jul",[0,0,48,24,24,24,0,0,0,0,0,0]],
+["15 MEMBRANE","ITOCHU","111156203","HERB FED CHICKEN MEMBRANE 1KGx12 (WHOLE)","Closed: 1 FCL",[0,0,24,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","NIHONICHI","111157202","HERB FED YAGEN WITH MEMBRANE 1KGx12","Closed: JUN 1 FCL",[0,24,0,24,0,24,0,0,0,0,0,0]],
+["15 MEMBRANE","BRAND SHOKUHAN","111157202","HERB FED YAGEN WITH MEMBRANE 1KGx12","Closed 12/11",[0,12,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","OKAYA (ASAHI)","111356207","HERB YTR MEMBRANE 40G R15","Closed 21/11",[0,6,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","MIKAGE","—","HERB FED YAGEN WITH MEMBRANE 1KGx12","Combine idea",[0,0,2.4,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","BRAND SHOKUHAN","—","HERB YTR GIZZARD 40G S18","",[5,5.25,8.21,5.26,6.30,0,0,0,0,0,0,0]],
+["16 GIZZARD","OKAYA (ASAHI)","111366202","HERB FED YTR GIZZARD 35G R15","Closed — Long contract",[0,0,0,0,11.38,0,0,11.38,0,0,11.38,0]],
+["16 GIZZARD","OKAYA (KANEMATSU FOODS)","111366206","HERB YTR GIZZARD 35G TW18","Closed: Mar, May, Jul",[3.05,0,2.38,0,2.38,0,2.38,0,0,0,0,0]],
+["16 GIZZARD","JAPAN FOOD","—","SOUIKU HERB GIZZARD QUARTER CUT","Pending FB",[0,24,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","MIKAGE","111166202","FROZEN CHICKEN GIZZARD 2KGx6","Closed: SH MAY - FH JUN",[0,0,0,0,25.81,12,0,0,0,0,0,0]],
+["16 GIZZARD","UMIOS","—","HERB YTR GIZZARD 25G R15 IVQF","Closed FEB-MAR",[0,0.96,0.48,0,0,0,0,0,0,0,0,0]],
+["17 KNEE TENDON","(Seeking buyers)","111118203/212","FROZEN CHICKEN KNEE TENDON","No active orders",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["18 LEG TENDON","(Seeking buyers)","111118204/211","FROZEN CHICKEN LEG TENDON","No active orders",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["19 PAWS","CHAIYAPORN (MEEHAN)","NEW","FROZEN CHICKEN FEET 25-45G or 30-50G","Pending spec",[0,0,0,0,23.4,0,0,0,0,0,0,0]],
+["19 PAWS","FOOD OF MIND","111174201","FROZEN CHICKEN BONELESS FEET 2KGx6","Closed: Jan/Feb",[7.8,0,0,0,0,0,0,0,0,0,0,0]],
+["20 WING STICK","HARUMI","111134228","FROZEN CHICKEN WING STICK 55-65G 2KGx6","Closed: APR/MAY 27MT",[0,0,0,27,0,0,0,0,0,0,0,0]],
+["20 WING STICK","PUCHONG FOOD","111134228","FROZEN CHICKEN WING STICK 55-65G 2KGx6","Offer 31/3 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","BED2BED","114131206","FROZEN CHICKEN THREE JOINT WING 110G UP","Closed: APR 22.18MT",[0,0,0,22.18,0,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","MIENBOOM","111521007","FRIED SESAME CHICKEN WINGS","Closed: APR, MAY/JUN",[0,0,0,5.76,3,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","ATAGO","111132207","FROZEN CHICKEN TWO JOINT WING UNSIZE","Valid 12/1",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["22 WHOLE CHICKEN","SEA FROZEN","115186255","FROZEN WHOLE CHICKEN 1.4-1.6 KG","",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["22 WHOLE CHICKEN","IMAZU","111187211","FROZEN WHOLE CHICKEN 1.2-1.4 KG","",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["22 WHOLE CHICKEN","GLOBAL SUPPLY","111186229","FROZEN WHOLE CHICKEN 0.9-1.2 KG","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["23 CHICKEN FAT","MITSUI","111155202","HERB FED CHICKEN FAT 2KGx6","Need Sep — pending",[24,0,0,0,24,0,24,0,0,0,0,0]],
+["23 CHICKEN FAT","KK FRESH","111169204","FROZEN CHICKEN FAT","",[12,0,0,0,0,0,0,0,0,0,0,0]],
+["23 CHICKEN FAT","KK FRESH","111155203","FROZEN CHICKEN FAT","",[15,0,0,0,0,0,0,0,0,0,0,0]]
+];
+
+const MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const S=a=>a.reduce((x,y)=>x+(y||0),0);
+const F=(v,d=1)=>v.toLocaleString('en',{maximumFractionDigits:d,minimumFractionDigits:0});
+function clr(pct){return pct>=100?'var(--gn)':pct>=60?'var(--bl)':pct>=30?'var(--or)':'var(--rd)';}
+function st(pct){
+  if(!pct)return['No Sales','bgr'];
+  if(pct>=100)return['Over Plan 🎉','bgn'];
+  if(pct>=60)return['On Track','bbl'];
+  if(pct>=30)return['Below Target','bor'];
+  return['Needs Attention','brd'];
+}
+
+// Customer detail — Actual + Prospect paired per customer (from CSV)
+// CP format: [rm, cust, code, prod, a_note, a_monthly[12], p_note, p_monthly[12]]
+const CP=[
+["01 NECK SKIN","BRAND SHOKUHAN","111353202","HERB YTR BOILED NECK SKIN 40G S18","Closed: long contract MAR-MAY",[1.008,2.503,11.172,7.258,4.301,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["01 NECK SKIN","TTS (OOGURA)","111353203","HERB YTR NECK SKIN 30G R15","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["01 NECK SKIN","MAYEKAWA","—","HERB FED YTR NECK SKIN","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["01 NECK SKIN","OKAYA (ASAHI)","—","HERB FED YTR NECK SKIN 40G R15","Long contract — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,14,0,14,0,14,14,0,14]],
+["01 NECK SKIN","OKAYA (KS FRONTIER)","NPD","HERB YTR NECK SKIN 40G R18","NPD — ETD 13/01/2026",[0,0,0,0,0,0,0,0,0,0,0,0],"Add PP qty",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","BRAND SHOKUHAN","111358203","HERB YTR TAIL 40G S18","Closed: long contract MAR-MAY",[0,0,4.212,7.355,7.355,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","UMIOS","111358303","HERB YTR TAIL 25G R15 IVQF","Closed 17/12/2025",[0,0.96,0.904,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","UMIOS","—","HERB YTR MIXED PARTS 25G","Closed 07/01/2026",[0,0,1.004,0,0.2,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","OKAYA","—","YTR TAIL","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","OKAYA (KS FRONTIER)","NPD","HERB CHICKEN TAIL KARAAGE IVQF 1KGx10","NPD — Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","PUCHONG","—","FROZEN CHICKEN TAIL","Offer 31/3 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["02 TAIL","MIKAGE","—","FROZEN CHICKEN TAIL","Combine idea SO.1821",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (ASAHI)","111327403","HERB FED YTR BOILED BB SKIN 25G 12R","Long contract — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,8.9,17.8,8.9,17.8,8.9,17.8,8.9,17.8,8.9,17.8,8.9]],
+["03 SKIN BB","OKAYA (NISHIFU)","111521009","FRIED HERB CHICKEN SKIN KARAAGE","Follow up after Golden Week",[23.4,46.8,70.2,46.8,46.8,46.8,0,0,0,0,0,0],"Closed 11 FCL FEB-JUN",[0,0,0,23.4,0,0,62.4,62.4,62.4,62.4,62.4,62.4]],
+["03 SKIN BB","OKAYA (ASAHI)","111127209","HERB FED SKIN BB","Closed — Long contract",[24,0,0,24,0,24,0,24,0,24,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","HARUMI","111127202","FROZEN CHICKEN SKIN","",[0,18.72,28.08,18.72,18.72,18.72,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (KANEMATSU FOODS)","111327205","HERB YTR BOILED BB SKIN 35G TW18","Closed: Mar, May, Jul",[3.15,0,4.095,0,4.095,0,4.095,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","UMIOS","111327303","HERB YTR BOILED BB SKIN 25G R15 IVQF","Closed 17/12/2025",[0,0.96,0.52,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["03 SKIN BB","OKAYA (ASAHI)","111327201","YTR 35G BOILED BB SKIN F15","Closed — Long contract",[0,0,0,14.04,0,0,14.04,0,0,14.04,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["04 SHOULDER & RIBS","UMIOS","111129224","FROZEN CHICKEN BONELESS BREAST-K","Closed: Jun/Jul, Jul/Aug",[24,24,48,48,0,24,24,0,0,0,0,0],"",[0,0,0,0,0,0,0,24,24,24,24,24]],
+["04 SHOULDER & RIBS","UMIOS","111129234","HERB SHOULDER MEAT 15G UP","Not closed",[0,0,12,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,12,0,0,0,0,0,0,0]],
+["04 SHOULDER & RIBS","OKAYA","111129222","HERB SHOULDER MEAT 10G UP","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["04 SHOULDER & RIBS","ITOCHU","111129222","HERB SHOULDER MEAT 10G UP","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["05 SBB TRIMMING (CENTER TENDON)","UMIOS","111329202","HERB YTR MIXED PART 25G (SBB CENTER TENDON)","Inquiry 2.4-4MT JUN/JUL",[0,0,1.004,0,0.2,0,0,0,0,0,0,0],"YTR MIXED — check pkg",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["05 SBB TRIMMING (CENTER TENDON)","ITOCHU","111129229","HERB BB TRIMMING","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["05 SBB TRIMMING (CENTER TENDON)","BUMIMAS","111129228","FROZEN CHICKEN SBB TRIMMING","Offer MAY/JUN — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,27,0,0,0,0,0,0,0]],
+["06 SBB TRIMMING","LAMEX","111129231","FROZEN CHICKEN SKINLESS BONELESS BREAST TRIMMING (JUMBO)","Customer rejected new spec",[27.3,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,54.6,0],"",[0,0,0,0,0,0,0,0,0,0,0,54.6]],
+["06 SBB TRIMMING","KK FRESH","111129228","FROZEN CHICKEN SBB TRIMMING","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["06 SBB TRIMMING","SINIORA","—","FROZEN CHICKEN SKINLESS BONELESS BREAST TRIMMING (JUMBO)","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","ATAGO","111149201","FROZEN CHICKEN INNER FILLET TRIMMING (CAN ACCEPT TENDON)","Closed: Jan-Apr",[24,24,24,24,0,0,0,0,0,0,0,0],"Delay til FH AUG",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","ATAGO","111149205","FROZEN CHICKEN INNER FILLET TRIMMING (WITHOUT TENDON)","",[6,6,6,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","MITSUI","—","FROZEN CHICKEN INNER FILLET TRIMMING","Offer idea 26/11",[0,0,0,0,0,0,0,0,0,0,0,0],"",[24,24,0,0,0,0,0,0,0,0,0,0]],
+["07 FILLET TRIMMING","MIKAGE","—","FROZEN CHICKEN INNER FILLET TRIMMING","Customer on hold",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["08 BL SCRAP","ITOCHU","111119215","HERB FED BL TRIMMING","",[24,48,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["08 BL SCRAP","ITOCHU","111119230","HERB BL TRIMMING (TYPE A)","Offer Jan/Feb",[0,0,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2],"Closed Beisia 1FCL MAR-JAN27",[0,0,0,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2,19.2]],
+["08 BL SCRAP","ITOCHU","111119231","HERB BL TRIMMING (TYPE B)","",[0,0,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8],"",[0,0,0,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8,4.8]],
+["08 BL SCRAP","OKAYA","111119215","HERB FED BL TRIMMING","Inquiry Jun 1 FCL",[0,38.5,0,7.78,2.26,28.15,0,0,0,0,0,0],"",[0,0,0,0,0,0,24,0,0,0,0,0]],
+["08 BL SCRAP","PUCHONG","111119216","CHICKEN LEG BONELESS FROZEN (T)","Offer 22/12 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[27,27,27,27,27,27,27,27,27,27,27,27]],
+["09 BL OYSTER","BUMIMAS","111119222","FROZEN CHICKEN SKINLESS BONELESS LEG-K","Closed: Apr/May 1 FCL",[21.99,27,27,27,0,0,0,0,0,0,0,0],"Dimension spec",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["09 BL OYSTER","OKAYA","111119222","FROZEN CHICKEN SKINLESS BONELESS LEG-K","Inquiry ASAP 2 FCL",[0,0,0,0,13.5,0,0,0,0,0,0,0],"",[0,0,0,0,24,0,24,0,0,0,0,0]],
+["09 BL OYSTER","TYSON MALAYSIA","—","FROZEN CHICKEN SKINLESS BONELESS LEG 6-10G","Not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,15,0,0,0,0,0,0,0]],
+["09 BL OYSTER","JAPAN FOOD (NH FOOD)","111319209","HERB FED YTR OYSTER MEAT 30G R15","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","KK FRESH","111150220","FROZEN CHICKEN MDM (ST.1)","ST.1",[242.93,242.93,134.96,134.96,0,0,0,0,0,0,0,0],"Closed 18/12 (15FCL)",[0,0,0,0,134.96,134.96,134.96,134.96,134.96,134.96,134.96,134.96]],
+["10 PREMIUM CCM","KK FRESH","111150212","FROZEN CHICKEN MDM (ST.1)","ST.1",[107.97,107.97,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","HUME","111150227","FROZEN CHICKEN MDM (ST.1+AW PKG)","ST.1 + AW PKG",[396,0,0,0,0,0,0,0,0,0,0,0],"Adjust polyblock spec",[0,0,0,0,264,264,264,264,264,264,264,264]],
+["10 PREMIUM CCM","BUMIMAS","111150220","FROZEN CHICKEN MDM","Closed: combine oyster",[5.01,0,0,0,13.5,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","GLOBEX","111150220","FROZEN CHICKEN MDM (ST.1)","ST.1",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["10 PREMIUM CCM","MIKAGE","111150215","HERB FED PREMIUM CCM","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["12 MDM","KK FRESH","111150221","FROZEN CHICKEN MDM","Closed 18/12 (15 FCL)",[134.96,134.96,134.96,0,0,0,0,0,0,0,0,0],"Offer 10FCL/month Jan-Apr",[0,0,0,134.96,134.96,134.96,134.96,134.96,134.96,134.96,134.96,134.96]],
+["12 MDM","HUME","111150221","FROZEN CHICKEN MDM (MIX STAGE)","MIX STAGE",[0,0,0,0,0,0,0,0,0,0,0,0],"Adjust polyblock spec",[0,0,0,0,264,264,264,264,264,264,264,264]],
+["12 MDM","ITOCHU (PH)","—","MDM","Pending update",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["13 BACK RIB","UMIOS","111159210","HERB FED CHICKEN RIBS 20G UP","Inquiry 24MT",[0,0,12,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,24,0,0,0,0,0,0,0]],
+["13 BACK RIB","OKAYA (ASAHI)","111159208","HERB FED CHICKEN RIBS 25-35G 1KGx12","Inquiry 18MT",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,18,0,0,0,0,0,0,0]],
+["13 BACK RIB","CGC","—","RIBS","Closed: Early Sep",[0,0,0,0,0,0,0,0,2.4,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["13 BACK RIB","MIKAGE","—","CHICKEN RIBS","Offer combine SO.1720",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,3,0,6,0,0,0,0,0,0]],
+["13 BACK RIB","ITOCHU","—","RIBS 25-35G","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","OKAYA (ASAHI)","111154208","HERB FED NECK MEAT 2KGx6","Closed: 12MT, Inquiry Oct 12MT",[0,12,0,24,0,0,0,12,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,12,0,12]],
+["14 NECK MEAT","OKAYA (ASAHI)","111154210","HERB FED NECK MEAT 500Gx24","Closed: 12MT",[0,12,0,0,0,0,0,12,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,12,0,12]],
+["14 NECK MEAT","J OVERSEA","—","HERB FED CHICKEN NECK MEAT 240Gx40","Closed: 4 FCL",[0,0,0,0,0,8.74,0,8.74,8.74,8.74,8.74,8.74],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","ATAGO","—","HERB FED NECK MEAT","",[12,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["14 NECK MEAT","UMIOS","—","HERB FED NECK MEAT","On-process offer",[0,0,0,7.2,0,0,0,0,0,0,0,0],"Ref closed 2025",[0,0,0,0,3,0,0,9,0,0,0,0]],
+["14 NECK MEAT","UMIOS","—","HERB YTR NECK MEAT 25G R15 IVQF","Closed 17/12/2025",[0,0.96,0.75,0,0,0,0,0,0,0,0,0],"",[0,0,0,0.96,0.48,0.96,0.48,0.96,0.48,0.96,0.48,0.96]],
+["14 NECK MEAT","JAPAN FOOD","—","HERB FED NECK MEAT","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,12,0,12,12,12,12,12,12]],
+["14 NECK MEAT","JAPAN FOOD","—","HERB YTR NECK MEAT 30G R15 (RYUHO)","Closed til May",[0,1.8,0,0,1.8,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,1.8,0,0,1.8,0]],
+["14 NECK MEAT","HANWA","111154202","NECK MEAT HERB (1KG)","Offer valid — not closed",[0,0,8.4,15,0,0,0,0,0,0,0,0],"",[0,0,0,0,6,12,12,12,12,12,12,12]],
+["14 NECK MEAT","MIKAGE","—","NECK MEAT HERB","Inquiry — combine pending",[0,0,12,0,12,0,0,0,0,0,0,0],"Want 2FCL/month from MAR",[0,0,0,0,0,24,24,24,24,24,24,24]],
+["14 NECK MEAT","IMAZU","—","HERB FED NECK MEAT","",[12,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","ITOCHU","111156213","HERB FED CHICKEN MEMBRANE (HALF-CUT)","Closed: Apr-Jul",[0,0,48,24,24,24,0,0,0,0,0,0],"",[0,0,0,0,0,12,0,0,0,0,12,0]],
+["15 MEMBRANE","ITOCHU","111156203","HERB FED CHICKEN MEMBRANE 1KGx12 (WHOLE)","Closed: 1 FCL",[0,0,24,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","NIHONICHI","111157202","HERB FED YAGEN WITH MEMBRANE 1KGx12","Closed: JUN 1 FCL",[0,24,0,24,0,24,0,0,0,0,0,0],"Check latest offer date",[0,0,0,0,0,0,0,24,0,24,0,24]],
+["15 MEMBRANE","BRAND SHOKUHAN","111157202","HERB FED YAGEN WITH MEMBRANE 1KGx12","Closed 12/11",[0,12,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","OKAYA (ASAHI)","111356207","HERB YTR MEMBRANE 40G R15","Closed 21/11",[0,6,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["15 MEMBRANE","NIPPON STEEL","—","HERB FED YAGEN WITH MEMBRANE 1KGx12","Offer Jun/Jul 24MT",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,24,0,0,0,0,0]],
+["15 MEMBRANE","MIKAGE","—","HERB FED YAGEN WITH MEMBRANE 1KGx12","Combine idea BL THIGH",[0,0,2.4,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","BRAND SHOKUHAN","—","HERB YTR GIZZARD 40G S18","",[5,5.25,8.21,5.26,6.3,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","OKAYA (ASAHI)","111366202","HERB FED YTR GIZZARD 35G R15","Closed — Long contract",[0,0,0,0,11.38,0,0,11.38,0,0,11.38,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","OKAYA (KANEMATSU FOODS)","111366206","HERB YTR GIZZARD 35G TW18","Closed: Mar, May, Jul",[3.05,0,2.38,0,2.38,0,2.38,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","JAPAN FOOD","—","SOUIKU HERB GIZZARD QUARTER CUT","Pending FB",[0,24,0,0,0,0,0,0,0,0,0,0],"",[0,0,24,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","MIKAGE","111166202","FROZEN CHICKEN GIZZARD 2KGx6","Closed: SH MAY - FH JUN",[0,0,0,0,25.81,12,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","UMIOS","—","HERB YTR GIZZARD 25G R15 IVQF","Closed FEB-MAR",[0,0.96,0.48,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["16 GIZZARD","FOOD OF MIND","—","HERB FED GIZZARD QUARTER CUT","Offer idea 5/1",[0,0,0,0,0,0,0,0,0,0,0,0],"Add PP qty",[0,0,7.8,0,0,0,0,0,0,0,0,0]],
+["17 KNEE TENDON","(Seeking buyers)","111118203/212","FROZEN CHICKEN KNEE TENDON","No active orders",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["18 LEG TENDON","JAPAN FOOD","—","LEG TENDON HALF CUT KARAAGE","Combine idea",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,3,0,0,0,0,0,0]],
+["18 LEG TENDON","TTS (JAPAN BISHOKU)","—","YTR LEG TENDON 30G / 1/3 CUT","Offer idea 12/3",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["19 PAWS","CHAIYAPORN (MEEHAN)","NEW CODE","FROZEN CHICKEN FEET 25-45G or 30-50G","Pending spec",[0,0,0,0,23.4,0,0,0,0,0,0,0],"Pending spec",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["19 PAWS","FOOD OF MIND","111174201","FROZEN CHICKEN BONELESS FEET 2KGx6","Closed: Jan/Feb",[7.8,0,0,0,0,0,0,0,0,0,0,0],"",[0,7.8,7.8,7.8,7.8,7.8,7.8,7.8,7.8,7.8,7.8,7.8]],
+["19 PAWS","LAMEX (GmBH)","111174201","FROZEN CHICKEN BONELESS FEET 2KGx6","Idea 5750-5800 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["19 PAWS","SIAM FOODZIE","111174201","FROZEN CHICKEN BONELESS FEET 2KGx6","Not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,4.39,0,0,0,0,0,0,0,0,0]],
+["20 WING STICK","HARUMI","111134228","FROZEN CHICKEN WING STICK 55-65G 2KGx6","Closed: APR/MAY 27MT",[0,0,0,27,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["20 WING STICK","PUCHONG FOOD","111134228","FROZEN CHICKEN WING STICK 55-65G 2KGx6","Offer 31/3 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,27,27,27,27,27,0,0,0,0,0,0]],
+["20 WING STICK","TYSON MALAYSIA","111134228","FROZEN CHICKEN WING STICK 55-65G 2KGx6","Offer 27/4",[0,0,0,0,0,0,0,0,0,0,0,0],"Check spec first",[0,0,0,0,27,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","BED2BED","114131206","FROZEN CHICKEN THREE JOINT WING 110G UP","Closed: APR 22.18MT",[0,0,0,22.18,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","MIENBOOM","111521007","FRIED SESAME CHICKEN WINGS","Closed: APR, MAY/JUN",[0,0,0,5.76,3,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","ATAGO","111132207","FROZEN CHICKEN TWO JOINT WING UNSIZE","Valid 12/1",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,24,24,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","TBK","111132208","FROZEN CHICKEN TWO JOINT WING UNSIZE","Valid 12/1",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,24,24,24,0,0,0,0,0,0]],
+["21 2JW & 3JW","UMIOS","—","(various)","Offer 7/1 — not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,24,0,0,0,0,0,0,0,0,0]],
+["21 2JW & 3JW","SIAM FOODZIE","—","(various)","Not closed",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,19.008,0,0,0,0,0,0,0,0,0]],
+["22 WHOLE CHICKEN","SEA FROZEN","115186255","FROZEN WHOLE CHICKEN 1.4-1.6 KG","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["22 WHOLE CHICKEN","IMAZU","111187211","FROZEN WHOLE CHICKEN 1.2-1.4 KG","",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0.38,0,0,0,0]],
+["22 WHOLE CHICKEN","GLOBAL SUPPLY","111186229","FROZEN WHOLE CHICKEN 0.9-1.2 KG","Pending FB",[0,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,0,0,0,0,0,0]],
+["23 CHICKEN FAT","MITSUI","111155202","HERB FED CHICKEN FAT 2KGx6","Need Sep — pending",[24,0,0,0,24,0,24,0,0,0,0,0],"",[0,0,0,0,0,0,24,24,24,24,24,24]],
+["23 CHICKEN FAT","KK FRESH","111169204","FROZEN CHICKEN FAT","",[12,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,24,24,24,24,24,24]],
+["23 CHICKEN FAT","KK FRESH","111155203","FROZEN CHICKEN FAT","",[15,0,0,0,0,0,0,0,0,0,0,0],"",[0,0,0,0,0,0,24,24,24,24,24,24]]
+];
+
+// Initial render (uses built-in static data as fallback until the live sheet loads)
+renderKPI();
+renderTable();
+renderCharts();
+renderCustomers(null,null);
+
+// ── GOOGLE SHEET LIVE SOURCE ──
+// Sheet 2: "Special  Product EXP (MP)"  (gid 169945695)
+const SHEET_ID='1BBYjNZCDXacTJEy7X4JFatt1V13gqaVm3qpj__5wxd8';
+const SHEET_GID='169945695';
+const SHEET_CSV_URL=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
+
+async function loadFromSheet(){
+  const el=document.getElementById('ust');
+  el.textContent='⏳ กำลังโหลดจาก Google Sheet…';
+  try{
+    // cache-bust so a refresh always pulls the latest sheet contents
+    const res=await fetch(SHEET_CSV_URL+'&_cb='+Date.now(),{cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const text=await res.text();
+    applyCSV(text);
+    let tp=0,ta=0;
+    Object.values(D).forEach(d=>{tp+=S(d.p);ta+=S(d.a);});
+    const t=new Date().toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'});
+    el.textContent=`✅ Synced ${t} — Plan:${F(tp,0)} Actual:${F(ta,0)} MT`;
+  }catch(err){
+    el.textContent='❌ โหลดไม่สำเร็จ: '+err.message;
+    console.error('Google Sheet load failed:',err);
+  }
+}
+
+// Pull live data on page load
+loadFromSheet();
+
+// Auto-refresh from the sheet every 5 minutes while the page stays open
+setInterval(loadFromSheet, 5*60*1000);
+
+// ── CSV PARSER & LIVE UPDATE ──
+function parseCSVRows(text){
+  // Normalise CRLF → LF so split works for both Windows and Unix CSV files
+  text=text.replace(/\r\n/g,'\n').replace(/\r/g,'\n');
+  const rows=[];
+  text.split('\n').forEach(line=>{
+    const cells=[];let cur='',inQ=false;
+    for(let i=0;i<line.length;i++){
+      const ch=line[i];
+      if(ch==='"'){inQ=!inQ;}
+      else if(ch===','&&!inQ){cells.push(cur);cur='';}
+      else cur+=ch;
+    }
+    cells.push(cur);
+    rows.push(cells);
+  });
+  return rows;
+}
+
+function fl(v){const n=parseFloat(v);return isNaN(n)?0:Math.round(n*1000)/1000;}
+
+// Map CSV RM names (mixed case) → D{} keys (as defined above)
+const RM_MAP={
+  '04 Shoulder & Ribs':'04 SHOULDER & RIBS',
+  '04 Shoulder':'04 SHOULDER & RIBS',
+  '08 BL Scrap':'08 BL SCRAP',
+  '13 Back Rib':'13 BACK RIB',
+  '05 SBB TRIMMING (เอ็นกลาง)':'05 SBB TRIMMING (CENTER TENDON)',
+};
+function normRM(s){const t=s.trim();return RM_MAP[t]||t;}
+
+function applyCSV(text){
+  const rows=parseCSVRows(text);
+
+  // Find Jan-26 column index by scanning ALL rows (new CSV format has header at row ~29)
+  let col26=-1;
+  for(let r=0;r<rows.length;r++){
+    const idx=rows[r].findIndex(c=>c.trim()==='Jan-26');
+    if(idx>=0){col26=idx;break;}
+  }
+  if(col26<0){
+    document.getElementById('ust').textContent='❌ Jan-26 column not found';
+    return;
+  }
+
+  // col[8] = row type. NOTE: some CSV versions have 'All PROSPECT ' with trailing space
+  const TYPE_COL=8;
+  const TYPE_PLAN='All PLAN', TYPE_ACTUAL='All ACTUAL', TYPE_PROSPECT='All PROSPECT';
+  const TYPE_CUST_ACTUAL='ACTUAL', TYPE_CUST_PROSPECT='PROSPECT';
+
+  const newPlan={}, newActual={}, newProspect={};
+  const newCustActual={}, newCustProspect={};  // keyed by rm
+
+  rows.forEach(row=>{
+    if(row.length<col26+12) return;
+    const type=(row[TYPE_COL]||'').trim();   // trim handles both 'All PROSPECT' and 'All PROSPECT '
+    const rm=normRM(row[2]||'');
+    if(!rm||rm==='-') return;
+
+    const vals=Array.from({length:12},(_,i)=>fl(row[col26+i]));
+
+    if(type===TYPE_PLAN){
+      newPlan[rm]=newPlan[rm]?newPlan[rm].map((v,i)=>v+vals[i]):vals;
+    } else if(type===TYPE_ACTUAL){
+      newActual[rm]=newActual[rm]?newActual[rm].map((v,i)=>v+vals[i]):vals;
+    } else if(type===TYPE_PROSPECT){
+      newProspect[rm]=newProspect[rm]?newProspect[rm].map((v,i)=>v+vals[i]):vals;
+    } else if(type===TYPE_CUST_ACTUAL){
+      const cust=(row[3]||'').trim();
+      const code=(row[4]||'').trim()||'—';
+      const prod=(row[5]||'').trim();
+      const note=(row[6]||'').trim();
+      if(!newCustActual[rm])newCustActual[rm]=[];
+      newCustActual[rm].push({cust,code,prod,note,vals});
+    } else if(type===TYPE_CUST_PROSPECT){
+      const cust=(row[3]||'').trim();
+      const code=(row[4]||'').trim()||'—';
+      const prod=(row[5]||'').trim();
+      const note=(row[6]||'').trim();
+      if(!newCustProspect[rm])newCustProspect[rm]=[];
+      newCustProspect[rm].push({cust,code,prod,note,vals});
+    }
+  });
+
+  // Apply to D{} and PR{} — only update RMs we found in the CSV
+  Object.keys(D).forEach(rm=>{
+    if(newPlan[rm])    D[rm].p=newPlan[rm];
+    if(newActual[rm])  D[rm].a=newActual[rm];
+    if(newProspect[rm])PR[rm]=newProspect[rm];
+  });
+
+  // Re-render all three tabs
+  renderKPI();
+  renderTable();
+  renderCharts();
+  renderCustomers(newCustActual, newCustProspect);
+}
+
+function renderKPI(){
+  let tp=0,ta=0,tpr=0;
+  Object.entries(D).forEach(([rm,d])=>{tp+=S(d.p);ta+=S(d.a);tpr+=S(PR[rm]||[]);});
+  const pct=Math.round(ta/tp*100);
+  document.getElementById('kp').textContent=F(tp,0);
+  document.getElementById('ka').textContent=F(ta,1);
+  document.getElementById('kpct').textContent=pct+'%';
+  document.getElementById('kg').textContent=F(tp-ta,0);
+  document.getElementById('kpr').textContent=F(tpr,0);
+}
+
+function renderTable(){
+  const tb=document.getElementById('tb');
+  tb.innerHTML='';
+  Object.entries(D).forEach(([rm,d])=>{
+    const tp=S(d.p),ta=S(d.a),tpr=S(PR[rm]||[]),pct=tp?Math.round(ta/tp*100):0;
+    const bw=Math.min(pct,100),c=clr(pct),[sl,sc]=st(pct);
+    const bm=d.a.map((v,i)=>({v,i})).filter(x=>x.v>0).sort((a,b)=>b.v-a.v).slice(0,2).map(x=>`${MN[x.i]}:${F(x.v)}`).join(' · ')||'None';
+    const num=rm.match(/^\d+/)?.[0]||'';
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>
+      <span class="rc">${num}</span><span class="rn">${rm.replace(/^\d+\s*/,'')}</span>
+      <div class="pills">
+        <span class="p pbl">Target: ${F(tp)} MT</span>
+        <span class="p ${ta>=tp?'pgn':ta>0?'por':'pgr'}">Actual: ${F(ta)} MT</span>
+        ${tpr>0?`<span class="p ppu">Prospect: ${F(tpr)} MT</span>`:''}
+        ${tp>ta?`<span class="p prd">Gap: -${F(tp-ta)} MT</span>`:''}
+      </div>
+      <div class="bm">Best months: ${bm}</div>
+    </td>
+    <td class="r">${F(tp)}</td>
+    <td class="r" style="font-weight:700;color:${c}">${F(ta)}</td>
+    <td class="r" style="font-weight:700;color:var(--pu)">${tpr>0?F(tpr):'<span style="color:var(--g3)">—</span>'}</td>
+    <td><div class="pw"><div class="pb"><div class="pf" style="width:${bw}%;background:${c}"></div></div><span class="pp" style="color:${c}">${pct}%</span></div></td>
+    <td><span class="bd ${sc}">${sl}</span></td>`;
+    tb.appendChild(tr);
+  });
+}
+
+function renderCharts(){
+  const cg=document.getElementById('cg');
+  cg.innerHTML='';
+  Object.entries(D).filter(([,d])=>S(d.p)>5).forEach(([rm,d])=>{
+    const tp=S(d.p),ta=S(d.a),tpr=S(PR[rm]||[]),pct=tp?Math.round(ta/tp*100):0,c=clr(pct);
+    const pr=PR[rm]||new Array(12).fill(0);
+    const mv=Math.max(...d.p,...d.a,...pr,1);
+    const BAR=54;
+    const bars=d.p.map((p,i)=>{
+      const a=d.a[i]||0,r=pr[i]||0;
+      const ph=p?Math.max(2,Math.round(p/mv*BAR)):0;
+      const ah=a?Math.max(2,Math.round(a/mv*BAR)):0;
+      const rh=r?Math.max(2,Math.round(r/mv*BAR)):0;
+      const pBar=`<div class="bw"><div class="mlb" style="color:var(--g5)">${p?F(p,0):''}</div><div class="mr mp" style="height:${ph}px"></div></div>`;
+      const aBar=`<div class="bw"><div class="mlb" style="color:${a>p?'var(--gn)':'var(--bl)'}">${a?F(a,0):''}</div><div class="mr ma${a>p?' ov':''}" style="height:${ah}px"></div></div>`;
+      const rBar=`<div class="bw"><div class="mlb" style="color:var(--or)">${r?F(r,0):''}</div><div class="mr mpr" style="height:${rh}px"></div></div>`;
+      return`<div class="mg">${pBar}${aBar}${rBar}</div>`;
+    }).join('');
+    const xl=MN.map(m=>`<div>${m}</div>`).join('');
+    const el=document.createElement('div');el.className='cc';
+    el.innerHTML=`<h3>${rm}</h3><div class="cm">Target: <b>${F(tp)} MT</b> &nbsp;·&nbsp; Actual: <b style="color:${c}">${F(ta)} MT</b> (${pct}%)${tpr>0?` &nbsp;·&nbsp; Prospect: <b style="color:var(--or)">${F(tpr)} MT</b>`:''}</div><div class="mb">${bars}</div><div class="xl">${xl}</div>`;
+    cg.appendChild(el);
+  });
+}
+
+function renderCustomers(custActual, custProspect){
+  // custActual / custProspect: {rm -> [{cust,code,prod,note,vals}]}
+  // If not provided (initial load), use CP static array
+  const cd=document.getElementById('cd');
+  cd.innerHTML='';
+
+  // Build per-RM structure
+  // Merge actual+prospect per customer by matching cust+prod key
+  const rmKeys=Object.keys(D);
+  rmKeys.forEach(rm=>{
+    const d=D[rm]||{p:[],a:[]};
+    const tp=S(d.p),ta=S(d.a),pct=tp?Math.round(ta/tp*100):0,c=clr(pct);
+    const tpr=S(PR[rm]||[]);
+
+    // Get customer rows for this RM
+    // Use CP (static) when custActual is null OR when CSV had no customer-level rows for this RM
+    const useStatic=!custActual||Object.keys(custActual).length===0;
+    let actRows=useStatic ? CP.filter(r=>r[0]===rm).map(r=>({cust:r[1],code:r[2],prod:r[3],note:r[4],vals:r[5]}))
+                          : custActual[rm]||[];
+    let proRows=useStatic ? CP.filter(r=>r[0]===rm).map(r=>({cust:r[1],code:r[2],prod:r[3],note:r[6],vals:r[7]}))
+                          : custProspect?custProspect[rm]||[]:[]; 
+
+    // Skip RM if no customers
+    if(actRows.length===0&&proRows.length===0)return;
+
+    // Match prospect to actual by cust+prod
+    const proMap={};
+    proRows.forEach(r=>{
+      const key=r.cust+'|'+r.prod;
+      proMap[key]=r;
+    });
+
+    const wrap=document.createElement('div');wrap.className='rg';
+    const hdCols=MN.map(m=>`<th class="r" style="min-width:44px">${m}</th>`).join('');
+
+    const trs=actRows.map(ar=>{
+      const at=S(ar.vals);
+      const proKey=ar.cust+'|'+ar.prod;
+      const pr=proMap[proKey]||null;
+      const pt=pr?S(pr.vals):0;
+      const hasPros=pr&&(pt>0||(pr.note&&pr.note.length>0));
+
+      const amc=ar.vals.map(v=>v>0
+        ?`<td class="r" style="color:var(--bl);font-weight:600;font-size:11px">${F(v)}</td>`
+        :`<td class="r" style="color:var(--g3);font-size:10px">—</td>`).join('');
+
+      const pmc=pr?pr.vals.map(v=>v>0
+        ?`<td class="r" style="color:var(--or);font-weight:600;font-size:11px">${F(v)}</td>`
+        :`<td class="r" style="color:var(--g3);font-size:10px">—</td>`).join(''):'';
+
+      const aRow=`<tr>
+        <td rowspan="${hasPros?2:1}" style="vertical-align:top;border-right:3px solid var(--g2)">
+          <b style="font-size:12px">${ar.cust}</b><br>
+          <span style="font-size:9px;color:var(--g5)">${ar.code}</span>
+        </td>
+        <td><span style="font-size:10px">${ar.prod}</span>${ar.note?`<div class="nt">📝 ${ar.note}</div>`:''}</td>
+        <td style="font-size:10px;font-weight:700;color:var(--bl);white-space:nowrap">✅ Actual</td>
+        ${amc}
+        <td class="r" style="font-weight:700;color:${at>0?'var(--bl)':'var(--g5)'}">${at>0?F(at):'—'}</td>
+        <td>${at>0?'<span class="bd bbl">Active</span>':'<span class="bd bgr">No Sales</span>'}</td>
+      </tr>`;
+
+      const pRow=hasPros?`<tr style="background:#fffaf3">
+        <td><span style="font-size:10px;color:var(--or)">${ar.prod}</span>${pr.note?`<div class="nt" style="background:var(--orl);color:var(--or)">🔮 ${pr.note}</div>`:''}</td>
+        <td style="font-size:10px;font-weight:700;color:var(--or);white-space:nowrap">🔮 Prospect</td>
+        ${pmc}
+        <td class="r" style="font-weight:700;color:${pt>0?'var(--or)':'var(--g5)'}">${pt>0?F(pt):'—'}</td>
+        <td>${pt>0?'<span class="bd" style="background:var(--orl);color:var(--or)">Pipeline</span>':'<span class="bd" style="background:var(--g1);color:var(--g5)">No Data</span>'}</td>
+      </tr>`:'';
+
+      return aRow+pRow;
+    }).join('');
+
+    wrap.innerHTML=`<div class="rh"><b>${rm}</b>
+      <div class="pills" style="margin:0">
+        <span class="p pbl">Target: ${F(tp)} MT</span>
+        <span class="p ${ta>=tp?'pgn':ta>0?'por':'pgr'}">Actual: ${F(ta)} MT</span>
+        <span class="p" style="background:${c}22;color:${c}">${pct}%</span>
+        ${tpr>0?`<span class="p" style="background:var(--orl);color:var(--or)">🔮 Prospect: ${F(tpr)} MT</span>`:''}
+      </div></div>
+      <div class="ovx"><table class="ct">
+        <thead><tr>
+          <th style="min-width:130px">Customer</th>
+          <th style="min-width:190px">Product</th>
+          <th style="min-width:80px">Type</th>
+          ${hdCols}
+          <th class="r">Total</th><th>Status</th>
+        </tr></thead>
+        <tbody>${trs}</tbody>
+      </table></div>`;
+    cd.appendChild(wrap);
+  });
+}
+
+// Refresh button — re-pull live data from the Google Sheet
+document.getElementById('rf').onclick=loadFromSheet;
+
+// Tab switch
+function tab(id,btn){
+  document.querySelectorAll('.pn').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+  document.getElementById('pn-'+id).classList.add('on');
+  btn.classList.add('on');
+}
+</script>
+</body>
+</html>
