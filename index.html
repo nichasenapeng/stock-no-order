@@ -118,7 +118,8 @@ td{padding:13px 15px;font-size:13px;vertical-align:middle;color:var(--g7)}
 .ppu{background:var(--pul);color:var(--pu)}
 
 /* charts */
-.cgd{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-bottom:24px}
+.cgd{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:24px}
+@media(min-width:980px){.cgd{grid-template-columns:repeat(2,1fr)}}
 .cc{padding:16px 17px}
 .cc h3{font-size:13px;font-weight:600;color:var(--g9);margin-bottom:3px;letter-spacing:-.005em}
 .cc .cm{font-size:11px;color:var(--g5);margin-bottom:11px}
@@ -145,6 +146,18 @@ td{padding:13px 15px;font-size:13px;vertical-align:middle;color:var(--g7)}
 .sw{width:9px;height:9px;border-radius:2px;flex-shrink:0}
 .xl{display:flex;gap:4px;margin-top:7px}
 .xl>div{flex:1;font-size:8.5px;color:var(--g5);text-align:center;font-family:'IBM Plex Mono',monospace}
+/* monthly figures table (under each chart) */
+.mt{width:100%;border-collapse:collapse;margin-top:14px;font-size:10.5px}
+.mt th,.mt td{padding:4px 5px;text-align:right;white-space:nowrap;font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
+.mt thead th{font-size:9px;font-weight:600;color:var(--g5);border-bottom:1px solid var(--g2)}
+.mt tbody th{text-align:left;font-family:'Sarabun',sans-serif;font-weight:600;font-size:11px;color:var(--g7);position:sticky;left:0;background:var(--w)}
+.mt tbody tr+tr td,.mt tbody tr+tr th{border-top:1px solid var(--g1)}
+.mt .tot{font-weight:700;color:var(--g9);border-left:1px solid var(--g2)}
+.mt-p td{color:var(--g7)}
+.mt-a td{color:var(--bl)}
+.mt-a td.ov{color:var(--gn);font-weight:600}
+.mt-pr td{color:var(--pu)}
+.mt td.z{color:var(--g3);font-weight:400}
 
 /* customer panel */
 .rg{margin-bottom:16px;overflow:hidden}
@@ -752,8 +765,22 @@ function renderCharts(){
         tip+`</div>`;
     }).join('');
     const xl=MN.map(m=>`<div>${m}</div>`).join('');
+    // monthly figures table — exact Target / Actual / Prospect per month
+    const cell=(v,extra='')=>v>0?`<td class="${extra}">${F(v)}</td>`:`<td class="z">–</td>`;
+    const rowP=d.p.map(v=>cell(v)).join('');
+    const rowA=d.a.map((v,i)=>cell(v,(v>(d.p[i]||0))?'ov':'')).join('');
+    const rowR=pr.map(v=>cell(v)).join('');
+    const mh=MN.map(m=>`<th>${m}</th>`).join('');
+    const mt=`<div class="ovx"><table class="mt">
+        <thead><tr><th></th>${mh}<th class="tot">Total</th></tr></thead>
+        <tbody>
+          <tr class="mt-p"><th>Target</th>${rowP}<td class="tot">${F(tp)}</td></tr>
+          <tr class="mt-a"><th>Actual</th>${rowA}<td class="tot">${F(ta)}</td></tr>
+          ${tpr>0?`<tr class="mt-pr"><th>Prospect</th>${rowR}<td class="tot">${F(tpr)}</td></tr>`:''}
+        </tbody>
+      </table></div>`;
     const el=document.createElement('div');el.className='cc';
-    el.innerHTML=`<h3>${rm}</h3><div class="cm">Target: <b>${F(tp)} MT</b> &nbsp;·&nbsp; Actual: <b style="color:${c}">${F(ta)} MT</b> (${pct}%)${tpr>0?` &nbsp;·&nbsp; Prospect: <b style="color:var(--pu)">${F(tpr)} MT</b>`:''}</div><div class="mb">${bars}</div><div class="xl">${xl}</div>`;
+    el.innerHTML=`<h3>${rm}</h3><div class="cm">Target: <b>${F(tp)} MT</b> &nbsp;·&nbsp; Actual: <b style="color:${c}">${F(ta)} MT</b> (${pct}%)${tpr>0?` &nbsp;·&nbsp; Prospect: <b style="color:var(--pu)">${F(tpr)} MT</b>`:''}</div><div class="mb">${bars}</div><div class="xl">${xl}</div>${mt}`;
     cg.appendChild(el);
   });
 }
