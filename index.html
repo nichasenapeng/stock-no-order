@@ -171,6 +171,9 @@ td{padding:13px 15px;font-size:13px;vertical-align:middle;color:var(--g7)}
 .nt{font-size:10px;background:var(--g1);color:var(--g7);padding:2px 7px;border-radius:5px;display:inline-block;margin-top:3px}
 .nt-p{background:var(--pul);color:var(--pu)}
 .prospect-row{background:color-mix(in oklch,var(--pu) 5%,#fff)}
+.ct tr.sumrow td{background:color-mix(in oklch,var(--bl) 9%,var(--w));font-weight:600}
+.ct tr.sumrow-end td{border-bottom:2px solid color-mix(in oklch,var(--bl) 30%,var(--w))}
+.ovbadge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.04em;color:#fff;background:var(--bl);padding:2px 8px;border-radius:99px;margin-bottom:5px}
 .ovx{overflow-x:auto}
 
 /* tabs */
@@ -859,6 +862,29 @@ function renderCustomers(custActual, custProspect){
     }).join('');
 
     const pctCls=pct>=100?'pgn':pct>=60?'pbl':pct>=30?'por':'prd';
+
+    // RM-level monthly summary rows (Target + Actual) at the top of each panel
+    const mCell=(v,style='')=>v>0?`<td class="r"${style?` style="${style}"`:''}>${F(v)}</td>`:`<td class="r" style="color:var(--g3)">–</td>`;
+    const sumP=d.p.map(v=>mCell(v,'color:var(--g7)')).join('');
+    const sumA=d.a.map((v,i)=>mCell(v,'color:'+(v>(d.p[i]||0)?'var(--gn);font-weight:600':'var(--bl)'))).join('');
+    const [sLabel,sCls]=st(pct);
+    const sumRows=`
+      <tr class="sumrow">
+        <td rowspan="2" style="vertical-align:top;border-right:1px solid var(--g2)"><span class="ovbadge">ภาพรวม</span><br><b style="color:var(--g9)">รายเดือน</b><br><span style="font-size:10px;color:var(--g5)">ทุกลูกค้ารวม</span></td>
+        <td style="color:var(--g5)">เป้าหมาย (Target)</td>
+        <td><span class="typ" style="color:var(--g7)">Target</span></td>
+        ${sumP}
+        <td class="r" style="font-weight:700;color:var(--g9)">${F(tp)}</td>
+        <td></td>
+      </tr>
+      <tr class="sumrow sumrow-end">
+        <td style="color:var(--g5)">ยอดขายจริง (Actual)</td>
+        <td><span class="typ typ-a">Actual</span></td>
+        ${sumA}
+        <td class="r" style="font-weight:700;color:var(--bl)">${F(ta)}</td>
+        <td><span class="bd ${sCls}">${sLabel}</span></td>
+      </tr>`;
+
     wrap.innerHTML=`<div class="rh"><b>${rm}</b>
       <div class="pills" style="margin:0">
         <span class="p pbl">Target: ${F(tp)} MT</span>
@@ -874,7 +900,7 @@ function renderCustomers(custActual, custProspect){
           ${hdCols}
           <th class="r">Total</th><th>Status</th>
         </tr></thead>
-        <tbody>${trs}</tbody>
+        <tbody>${sumRows}${trs}</tbody>
       </table></div>`;
     cd.appendChild(wrap);
   });
