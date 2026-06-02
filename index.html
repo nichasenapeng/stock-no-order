@@ -11,25 +11,25 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   color-scheme:light;
-  /* — Emerald & Sand — warm stone neutrals, deep emerald brand chrome — */
-  --w:#fff;                      /* card / panel surface (crisp white on warm stone) */
-  --g0:oklch(0.965 0.008 92);    /* page bg / inset fill — warm stone */
-  --g1:oklch(0.945 0.009 90);    /* hover / faint fill */
-  --g2:oklch(0.890 0.011 88);    /* hairline borders, tracks */
-  --g3:oklch(0.785 0.013 85);    /* faint marks, empty dash */
-  --g5:oklch(0.480 0.015 78);    /* muted labels / captions */
-  --g7:oklch(0.395 0.017 72);    /* secondary text */
-  --g9:oklch(0.255 0.018 80);    /* ink — warm near-black */
-  --chrome:oklch(0.305 0.055 162);   /* deep emerald — header / footer accents */
-  --chrome-2:oklch(0.38 0.06 162);   /* emerald hairlines on chrome */
-  --bl:oklch(0.515 0.105 165);  --bll:oklch(0.935 0.042 165);  /* actual / on-track — emerald */
-  --gn:oklch(0.565 0.140 148);  --gnl:oklch(0.935 0.060 148);  /* over plan — leaf green */
-  --rd:oklch(0.540 0.155 33);   --rdl:oklch(0.935 0.040 33);   /* gap / attention — terracotta */
-  --or:oklch(0.610 0.130 56);   --orl:oklch(0.935 0.055 62);   /* below target — burnt amber */
-  --pu:oklch(0.560 0.115 78);   --pul:oklch(0.930 0.060 80);   /* prospect — honey / sand gold */
+  /* — Slate & Indigo — cool slate neutrals, deep slate chrome, indigo accent — */
+  --w:#fff;                      /* card / panel surface */
+  --g0:oklch(0.976 0.004 256);   /* page bg / inset fill — cool white */
+  --g1:oklch(0.955 0.005 257);   /* hover / faint fill */
+  --g2:oklch(0.905 0.008 258);   /* hairline borders, tracks */
+  --g3:oklch(0.800 0.011 260);   /* faint marks, empty dash */
+  --g5:oklch(0.495 0.019 262);   /* muted labels / captions */
+  --g7:oklch(0.400 0.024 264);   /* secondary text */
+  --g9:oklch(0.265 0.029 265);   /* ink — cool near-black */
+  --chrome:oklch(0.300 0.034 263);   /* deep slate — header / footer */
+  --chrome-2:oklch(0.40 0.04 263);   /* slate hairlines on chrome */
+  --bl:oklch(0.505 0.185 277);  --bll:oklch(0.935 0.045 277);  /* actual / on-track — indigo (accent) */
+  --gn:oklch(0.580 0.140 150);  --gnl:oklch(0.935 0.058 150);  /* over plan — green */
+  --rd:oklch(0.550 0.185 27);   --rdl:oklch(0.935 0.042 27);   /* gap / attention — red */
+  --or:oklch(0.605 0.150 50);   --orl:oklch(0.935 0.058 56);   /* below target — burnt orange */
+  --pu:oklch(0.635 0.120 84);   --pul:oklch(0.930 0.062 86);   /* prospect — warm gold (lone warm accent) */
   --r:11px;  --r-sm:7px;
-  --sh:0 1px 2px oklch(0.30 0.04 120 / .06),0 1px 3px oklch(0.30 0.04 120 / .06);
-  --sh-md:0 2px 4px oklch(0.30 0.04 120 / .05),0 8px 20px -8px oklch(0.30 0.05 150 / .16);
+  --sh:0 1px 2px oklch(0.30 0.03 263 / .06),0 1px 3px oklch(0.30 0.03 263 / .06);
+  --sh-md:0 2px 4px oklch(0.30 0.03 263 / .05),0 8px 20px -8px oklch(0.30 0.04 263 / .18);
   --ease:cubic-bezier(.2,.8,.2,1);
   --z-sticky:100;
 }
@@ -39,7 +39,7 @@ body{font-family:'Sarabun',sans-serif;color:var(--g9);font-size:14px;line-height
 .mono{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
 
 /* header */
-.hd{background:var(--chrome);color:#fff;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:var(--z-sticky);box-shadow:0 1px 0 oklch(0.42 0.07 162),0 6px 20px -10px oklch(0.30 0.06 162 / .7)}
+.hd{background:var(--chrome);color:#fff;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:var(--z-sticky);box-shadow:0 1px 0 oklch(0.42 0.04 263),0 6px 20px -10px oklch(0.28 0.04 263 / .7)}
 .hd-l{display:flex;align-items:center;gap:13px;min-width:0}
 .mark{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.20);display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;letter-spacing:.02em;color:#fff;flex-shrink:0}
 .hd h1{font-size:15px;font-weight:700;line-height:1.2;letter-spacing:-.01em}
